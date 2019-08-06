@@ -32,5 +32,36 @@ public class Factorial {
 		} while (ans.equals("y") || ans.equals("Y"));
 
 	}
+	
+	public double  factor (double fact) {
+		double x;
+		x = fact;
+		double y = 1;
+		//Scanner scan = new Scanner(System.in);
+	
+		for (double i = 1; i <= x; i++) {
+			y = i * y;
 
+		}
+		return y;
+	}
+
+	public int countInterations (double fact ) {
+		int count = 0;
+		double x;
+		x = fact;
+		double y = 1;
+		//Scanner scan = new Scanner(System.in);
+		//System.out.println("Enter Factorial:\n ");
+		//x = scan.nextDouble();
+		//System.out.println("You choose " + x +"!\n");
+		for (double i = 1; i <= x; i++) {
+			y = i * y;
+
+			count++;
+		}
+		
+		return count;
+	}
+	
 }
