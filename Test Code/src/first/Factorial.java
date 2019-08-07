@@ -11,6 +11,10 @@ public class Factorial {
 
 	static String ans;
 	public static void main(String[] args) {
+		
+		//System.out.println(RecFactor(24));
+		
+		
 		// TODO Auto-generated method stub
 		do {
 			
@@ -30,7 +34,7 @@ public class Factorial {
 			System.out.println("Press y to go again.\n");
 			ans = scan.next();
 		} while (ans.equals("y") || ans.equals("Y"));
-
+		
 	}
 	
 	public double  factor (double fact) {
@@ -62,6 +66,17 @@ public class Factorial {
 		}
 		
 		return count;
+	}
+	
+	public double RecFactor(double factor) {
+		double newFactor = factor;
+		if(factor >= 2) {
+		double subFactor = factor -1;
+	
+		newFactor = factor * RecFactor(subFactor);
+		}
+		return newFactor;
+	
 	}
 	
 }

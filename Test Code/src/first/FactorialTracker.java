@@ -20,7 +20,7 @@ public class FactorialTracker {
 				System.out.println("Enter Factorial: ");
 				factor = scan.nextDouble();
 				
-				System.out.print("Factor: " + factor + "| Iterations: " + one.countInterations(factor) + "| Solution: " + one.factor(factor) + "\n");
+				System.out.print("Factor: " + factor + "| Iterations: " + one.countInterations(factor) + "| Solution: " + one.RecFactor(factor) + "\n");
 				
 				
 				System.out.println("Press y to go again.\n");
